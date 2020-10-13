@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'AvenirNext';
+    src: url('./fonts/AvenirNext-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirNext';
+    src: url('./fonts/AvenirNext-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LucidaGrande';
+    src: url('./fonts/lucidagrande.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'CTCSplachRounded';
+    src: url('./fonts/10475.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "NoName37";
+    src: url('./fonts/no_name_37_Regular.otf') formar('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "NoName37";
+    src: url('./fonts/no_name_37_Light.otf') formar('opentype');
+    font-weight: lighter;
+    font-style: lighter;
+}
+
+@font-face {
+    font-family: "Gulim";
+    src: url('./fonts/ufonts.com_gulim.ttf') formar('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
