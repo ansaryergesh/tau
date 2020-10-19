@@ -1,6 +1,5 @@
 @import url("../fonts.css");
 $nav-secondary:#ACB3FF;
-
 $green-color: #4DBB91;
 
 html {
@@ -28,6 +27,7 @@ body {
     font-family: Avenir Next;
     margin: 0 !important;
     padding: 0 !important;
+    overflow-x: hidden;
 }
 
 .text-center {
