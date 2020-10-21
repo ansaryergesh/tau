@@ -130,47 +130,37 @@
   }
 
   .slidingbar1 {
-    background-image: linear-gradient(
-        to bottom right,
+    background-image: linear-gradient(to bottom right,
         rgba(56, 26, 131, 0.911),
-        rgba(56, 26, 131, 0.599)
-      ),
+        rgba(56, 26, 131, 0.599)),
       url(../img/triangle2.png);
   }
 
   .slidingbar2 {
-    background-image: linear-gradient(
-        to bottom right,
+    background-image: linear-gradient(to bottom right,
         rgba(56, 26, 131, 0.911),
-        rgba(56, 26, 131, 0.599)
-      ),
+        rgba(56, 26, 131, 0.599)),
       url(../img/triangle1.png);
   }
 
   .slidingbar3 {
-    background-image: linear-gradient(
-        to bottom right,
+    background-image: linear-gradient(to bottom right,
         rgba(56, 26, 131, 0.911),
-        rgba(56, 26, 131, 0.599)
-      ),
+        rgba(56, 26, 131, 0.599)),
       url(../img/triangle3.png);
   }
 
   .slidingbar4 {
-    background-image: linear-gradient(
-        to bottom right,
+    background-image: linear-gradient(to bottom right,
         rgba(56, 26, 131, 0.911),
-        rgba(56, 26, 131, 0.599)
-      ),
+        rgba(56, 26, 131, 0.599)),
       url(../img/triangle4.png);
   }
 
   .slidingbar5 {
-    background-image: linear-gradient(
-        to bottom right,
+    background-image: linear-gradient(to bottom right,
         rgba(56, 26, 131, 0.911),
-        rgba(56, 26, 131, 0.599)
-      ),
+        rgba(56, 26, 131, 0.599)),
       url(../img/triangle5.png);
   }
 
@@ -281,6 +271,11 @@
     -webkit-filter: grayscale(300%);
     filter: grayscale(300%);
     padding: 15px 0;
+
+    &:hover {
+      -webkit-filter: grayscale(0%);
+      filter: grayscale(0%);
+    }
   }
 }
 
@@ -316,6 +311,25 @@
     // grid-template-columns: repeat(2, 1fr);
   }
 
+  .whereusing {
+    &--text {
+      ul {
+        columns: 2;
+        -webkit-columns: 2;
+        -moz-columns: 2;
+
+        li {
+          display: flex;
+          align-items: center;
+          height: 50px;
+        }
+      }
+    }
+
+
+
+  }
+
   .contact {
     position: relative;
   }
@@ -340,6 +354,21 @@
 @media only screen and (max-width: 768px) {
   .direction {
     margin: 15px 15px;
+  }
+
+
+
+  .whereusing {
+    &--action {
+      display: flex;
+      flex-direction: row !important;
+      align-items: center;
+
+      button {
+        width: 50%;
+        padding: 15px;
+      }
+    }
   }
 
   .map {
@@ -442,6 +471,21 @@
       }
 
       &--head {
+        height: 200px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+        .goal {
+          transform: translateX(1%) !important;
+        }
+
+        img {
+          height: 100px;
+        }
+
         h2 {
           border-bottom: 4px solid $green-color;
         }
@@ -584,8 +628,7 @@
       height: 100%;
     }
 
-    &--1 {
-    }
+    &--1 {}
 
     .symbol {
       position: absolute;
@@ -654,6 +697,11 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 15px;
+
+    a {
+      color: black !important;
+      text-decoration: none;
+    }
   }
 
   .using {
@@ -709,26 +757,38 @@
     font-weight: bold;
     text-align: center;
     margin: 0 auto;
+    position: relative;
 
     a {
       color: black !important;
     }
   }
+
+  .frontcatalog {
+    position: absolute;
+
+    object-fit: cover;
+  }
+
 }
 
-.openedcataloghead {
-  padding: 25px;
-  background: linear-gradient(
-      to right,
+.kabelopened {
+  background: linear-gradient(to right,
       #121842,
       #121842e3,
       #131944c2,
-      #131944ba
-    ),
-    url(../img//catalog1/beh1.png);
+      #131944ba),
+    url(../img/behlevelkabel2.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom center;
+  // position: relative;
+  background-position: 50% 75%;
+}
+
+
+.openedcataloghead {
+  padding: 25px;
+
   position: relative;
 
   img {
@@ -790,8 +850,7 @@
     justify-content: space-between;
     align-items: center;
 
-    img {
-    }
+    img {}
 
     &--head {
       p {
@@ -836,6 +895,10 @@
       border: 1px solid #07ad68;
     }
   }
+}
+
+.modal-open {
+  padding-right: 0 !important;
 }
 
 .contact {
@@ -988,17 +1051,38 @@
     border-radius: 10px;
     z-index: 10;
     background-color: #fff;
-    width: 500px;
-    max-width: 80%;
+    min-width: 400px;
+    width: 30%;
+    height: 300px;
     // display: block;
     display: none;
+    transition: .5s all;
+
+    .modalimg1 {
+      position: absolute;
+      bottom: 0;
+      left: 0
+    }
 
     &--content {
       .text {
         position: absolute;
-        float: right;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: auto !important;
+        right: 0;
         padding: 15px;
         padding-right: 25px;
+
+        a {
+          color: white !important
+        }
+
+        button {
+
+          margin-left: auto;
+        }
       }
 
       position: relative;
@@ -1069,6 +1153,8 @@
     left: 0;
     right: 0;
     bottom: 0;
+    height: 100%;
+    width: 100%;
     pointer-events: none;
     transition: 200ms ease-in-out;
     visibility: hidden;
@@ -1077,5 +1163,145 @@
   #overlay.active {
     opacity: 0.2;
     pointer-events: all;
+  }
+}
+
+hr {
+  margin-bottom: 0 !important;
+  ;
+}
+
+.neftgaz,
+.vetrovaya,
+.hydro,
+.metallurgia,
+.uran,
+.solnechni,
+.uranovaya {
+  color: white;
+  padding-top: 45px;
+  padding-bottom: 55px;
+}
+
+.neftgaz {
+  background: linear-gradient(203.4deg, rgba(115, 65, 243, 0.776) -46.75%, rgba(131, 87, 241, 0.428) 79.39%), url(../img/neftgaz.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.vetrovaya {
+  background: linear-gradient(203.4deg, rgba(56, 26, 131, 0.66) 46.75%, rgba(56, 26, 131, 0.449) 79.39%), url(../img/vetrovaya.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+}
+
+.hydro {
+  background: linear-gradient(203.4deg, rgba(56, 26, 131, 0.66) 46.75%, rgba(56, 26, 131, 0.449) 79.39%), url(../img/hydro.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+}
+
+.metallurgia {
+  background: linear-gradient(203.4deg, rgba(56, 26, 131, 0.66) 46.75%, rgba(56, 26, 131, 0.449) 79.39%), url(../img/metalurgia.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+}
+
+.uranovaya {
+  background: linear-gradient(203.4deg, rgba(56, 26, 131, 0.66) 46.75%, rgba(56, 26, 131, 0.449) 79.39%), url(../img/uran.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+}
+
+.solnechni {
+  background: linear-gradient(203.4deg, rgba(56, 26, 131, 0.66) 46.75%, rgba(56, 26, 131, 0.449) 79.39%), url(../img/solnechni.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+}
+
+.whereusing {
+
+  &--text {
+    h2 {
+      font-size: 24px;
+      line-height: 28px;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.056px;
+    }
+
+    .lists {}
+
+    ul {
+      padding-left: 0px !important;
+      font-family: AvenirNext;
+      font-size: 16px;
+      line-height: 26px;
+      letter-spacing: 0.064px;
+      font-weight: bold;
+
+
+      li {
+        margin-bottom: 30px;
+      }
+
+      li:before {
+        color: #4DBB91;
+        content: '●';
+        padding-right: 30px;
+        font-size: 18px;
+      }
+    }
+  }
+
+  &--action {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    button {
+      color: white;
+      outline: none !important;
+      border: none;
+      background-color: #07AD68;
+      border-radius: 5px;
+      padding: 15px;
+    }
+
+    .solnceimg {
+      padding-top: 25px !important
+    }
+
+    .hydroicon {
+      padding-top: 30px !important
+    }
+
+    .icon {
+      width: 100px;
+      height: 100px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 50%;
+      margin-left: auto;
+
+      img {
+        width: 100%;
+
+        .hydroimg {
+          width: 50% !important;
+          transform: translateY(20%);
+        }
+      }
+    }
   }
 }

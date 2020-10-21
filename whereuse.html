@@ -21,8 +21,8 @@
 
 <body>
     <header>
-        <!-- <div class="navigation-top">
-            <nav class="nav--secondary container">
+        <div class="navigation-top">
+            <div class="nav--secondary container">
                 <ul class="nav--languages">
                     <li>English</li>
                     <li>Russian</li>
@@ -30,11 +30,16 @@
                 <ul class="nav--contacts">
                     <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
                     <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
-                    <li><i class="fa fa-phone" aria-hidden="true"></i> +7 /777/ 777 77 77;</li>
-                    <li><i class="fa fa-envelope" aria-hidden="true"></i> info@tau-distribution.com;</li>
+                    <li>
+                        <i class="fa fa-phone" aria-hidden="true"></i> +7 /777/ 777 77 77;
+                    </li>
+                    <li>
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        info@tau-distribution.com;
+                    </li>
                 </ul>
-            </nav>
-        </div> -->
+            </div>
+        </div>
         <nav class="mb-5 navbar navbar-expand-lg navbar-light navbar-fixed-top navmain transparent">
             <div class="container">
                 <a class="navbar-brand logo" href="index.html">
@@ -72,29 +77,28 @@
             наши товары
         </p>
         <img src="img/svg/graph.svg" alt="" />
-        <div class="modalblock " id="#modal1">
+        <div class="modalblock" id="#modal1">
             <div class="div"></div>
             <div class="modalblock--content">
-
-                <img src="img/svg/using1.svg" alt="">
+                <img src="img/svg/using1.svg" alt="" />
                 <div class="text">
-                    <h2>МАГИСТРАЛЬНАЯ СЕТЬ<br>
-                        ВЫСОКОГО НАПРЯЖЕНИЯ</h2>
-                    <p>Наша команда никогда не останавливается<br>
-                        на достигнутом, мы постоянно работаем над улучшением <br>качества сервиса и расширением портфеля
-                        товаров
-                        и
-                        услуг.</p>
-                    <button>Узнать подробнее</button>
+                    <h2 class="mb-4">
+                        МАГИСТРАЛЬНАЯ СЕТЬ<br />
+                        ВЫСОКОГО НАПРЯЖЕНИЯ
+                    </h2>
+                    <p>
+                        Наша команда никогда не останавливается<br />
+                        на достигнутом, мы постоянно<br /> работаем над улучшением<br />
+                        качества сервиса и расширением портфеля<br /> товаров и услуг. <br />
+                    </p>
+                    <button><a href="vetrovaya.html">Узнать подробнее</a> </button>
                 </div>
-
-
             </div>
 
-
-            <img src="img/modal1.png" alt="">
+            <img src="img/modal1.png" class="modalimg1" alt="" />
             <div class="triangle"></div>
         </div>
+        <div id="overlay"></div>
         <div class="icons">
             <div class="icon icon1" id="icon1">
                 <img src="img/svg/using1.svg" alt="" />
@@ -115,7 +119,6 @@
                 <img src="img/svg/neftgaz.svg" alt="" />
             </div>
         </div>
-
     </div>
 
     <footer class="footer container">
@@ -134,9 +137,11 @@
                             <a href=""><i class="fa fa-instagram"></i></a>
                         </div>
                         <div class="icon">
-                            <a href=""><i class="fa fa-vk"></i></a></div>
+                            <a href=""><i class="fa fa-vk"></i></a>
+                        </div>
                         <div class="icon">
-                            <a href=""><i class="fa fa-facebook"></i></a></div>
+                            <a href=""><i class="fa fa-facebook"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -193,20 +198,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
     <script src="js/script.js"></script>
-    <script>
-        var modal = document.getElementById("modal1")
-        var btn = document.getElementById('icon1');
 
-        btn.onclick = function () {
-            modal.style.display = "block";
-        }
-
-        window.onclick = function (event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
 </body>
 
 </html>

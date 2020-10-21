@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("../fonts.css");
 html {
   box-sizing: border-box; }
@@ -40,6 +41,8 @@ li {
   font-size: 14px;
   line-height: 35px;
   border-bottom: 1px solid #DADADA; }
+  .footer ul {
+    padding-left: 0 !important; }
   .footer a {
     color: black !important; }
   .footer .socials {
@@ -366,6 +369,9 @@ nav:last-child {
     -webkit-filter: grayscale(300%);
     filter: grayscale(300%);
     padding: 15px 0; }
+    .companies img:hover {
+      -webkit-filter: grayscale(0%);
+      filter: grayscale(0%); }
 
 .cooperation {
   background: url(../img/coorpbg.png);
@@ -389,6 +395,14 @@ nav:last-child {
 @media only screen and (min-width: 768px) {
   .directions {
     display: grid; }
+  .whereusing--text ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2; }
+    .whereusing--text ul li {
+      display: flex;
+      align-items: center;
+      height: 50px; }
   .contact {
     position: relative; }
   .map {
@@ -407,6 +421,13 @@ nav:last-child {
 @media only screen and (max-width: 768px) {
   .direction {
     margin: 15px 15px; }
+  .whereusing--action {
+    display: flex;
+    flex-direction: row !important;
+    align-items: center; }
+    .whereusing--action button {
+      width: 50%;
+      padding: 15px; }
   .map {
     position: inherit;
     width: 100%; }
@@ -470,8 +491,19 @@ nav:last-child {
   .about .missions .mission:nth-child(2) img {
     transform: translateX(20%);
     margin-bottom: 20px; }
-  .about .missions .mission--head h2 {
-    border-bottom: 4px solid #4DBB91; }
+  .about .missions .mission--head {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px; }
+    .about .missions .mission--head .goal {
+      transform: translateX(1%) !important; }
+    .about .missions .mission--head img {
+      height: 100px; }
+    .about .missions .mission--head h2 {
+      border-bottom: 4px solid #4DBB91; }
   .about .missions .mission p {
     font-size: 12px;
     line-height: 14px;
@@ -611,6 +643,9 @@ nav:last-child {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 15px; }
+    .orderuse .order a {
+      color: black !important;
+      text-decoration: none; }
   .orderuse .using {
     display: flex;
     align-items: center; }
@@ -637,16 +672,23 @@ nav:last-child {
   letter-spacing: -0.506471px;
   font-weight: bold;
   text-align: center;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative; }
   .openedcatalog .more a {
     color: black !important; }
 
-.openedcataloghead {
-  padding: 25px;
-  background: linear-gradient(to right, #121842, #121842e3, #131944c2, #131944ba), url(../img//catalog1/beh1.png);
+.openedcatalog .frontcatalog {
+  position: absolute;
+  object-fit: cover; }
+
+.kabelopened {
+  background: linear-gradient(to right, #121842, #121842e3, #131944c2, #131944ba), url(../img/behlevelkabel2.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom center;
+  background-position: 50% 75%; }
+
+.openedcataloghead {
+  padding: 25px;
   position: relative; }
   .openedcataloghead img {
     position: absolute;
@@ -717,6 +759,9 @@ nav:last-child {
     padding: 15px;
     border-radius: 50%;
     border: 1px solid #07ad68; }
+
+.modal-open {
+  padding-right: 0 !important; }
 
 .contact--info {
   display: flex;
@@ -829,18 +874,32 @@ nav:last-child {
     border-radius: 10px;
     z-index: 10;
     background-color: #fff;
-    width: 500px;
-    max-width: 80%;
-    display: none; }
+    min-width: 400px;
+    width: 30%;
+    height: 300px;
+    display: none;
+    transition: .5s all; }
+    .whereuse .modalblock .modalimg1 {
+      position: absolute;
+      bottom: 0;
+      left: 0; }
     .whereuse .modalblock--content {
       position: relative;
       padding: 25px;
       clear: left; }
       .whereuse .modalblock--content .text {
         position: absolute;
-        float: right;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: auto !important;
+        right: 0;
         padding: 15px;
         padding-right: 25px; }
+        .whereuse .modalblock--content .text a {
+          color: white !important; }
+        .whereuse .modalblock--content .text button {
+          margin-left: auto; }
       .whereuse .modalblock--content img {
         position: absolute;
         float: left; }
@@ -885,9 +944,114 @@ nav:last-child {
     left: 0;
     right: 0;
     bottom: 0;
+    height: 100%;
+    width: 100%;
     pointer-events: none;
     transition: 200ms ease-in-out;
     visibility: hidden; }
   .whereuse #overlay.active {
     opacity: 0.2;
     pointer-events: all; }
+
+hr {
+  margin-bottom: 0 !important; }
+
+.neftgaz,
+.vetrovaya,
+.hydro,
+.metallurgia,
+.uran,
+.solnechni,
+.uranovaya {
+  color: white;
+  padding-top: 45px;
+  padding-bottom: 55px; }
+
+.neftgaz {
+  background: linear-gradient(203.4deg, rgba(115, 65, 243, 0.776) -46.75%, rgba(131, 87, 241, 0.428) 79.39%), url(../img/neftgaz.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+.vetrovaya {
+  background: linear-gradient(203.4deg, rgba(56, 26, 131, 0.66) 46.75%, rgba(56, 26, 131, 0.449) 79.39%), url(../img/vetrovaya.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center; }
+
+.hydro {
+  background: linear-gradient(203.4deg, rgba(56, 26, 131, 0.66) 46.75%, rgba(56, 26, 131, 0.449) 79.39%), url(../img/hydro.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center; }
+
+.metallurgia {
+  background: linear-gradient(203.4deg, rgba(56, 26, 131, 0.66) 46.75%, rgba(56, 26, 131, 0.449) 79.39%), url(../img/metalurgia.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center; }
+
+.uranovaya {
+  background: linear-gradient(203.4deg, rgba(56, 26, 131, 0.66) 46.75%, rgba(56, 26, 131, 0.449) 79.39%), url(../img/uran.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center; }
+
+.solnechni {
+  background: linear-gradient(203.4deg, rgba(56, 26, 131, 0.66) 46.75%, rgba(56, 26, 131, 0.449) 79.39%), url(../img/solnechni.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center; }
+
+.whereusing--text h2 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: bold; }
+
+.whereusing--text p {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.056px; }
+
+.whereusing--text ul {
+  padding-left: 0px !important;
+  font-family: AvenirNext;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.064px;
+  font-weight: bold; }
+  .whereusing--text ul li {
+    margin-bottom: 30px; }
+  .whereusing--text ul li:before {
+    color: #4DBB91;
+    content: '●';
+    padding-right: 30px;
+    font-size: 18px; }
+
+.whereusing--action {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .whereusing--action button {
+    color: white;
+    outline: none !important;
+    border: none;
+    background-color: #07AD68;
+    border-radius: 5px;
+    padding: 15px; }
+  .whereusing--action .solnceimg {
+    padding-top: 25px !important; }
+  .whereusing--action .hydroicon {
+    padding-top: 30px !important; }
+  .whereusing--action .icon {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 50%;
+    margin-left: auto; }
+    .whereusing--action .icon img {
+      width: 100%; }
+      .whereusing--action .icon img .hydroimg {
+        width: 50% !important;
+        transform: translateY(20%); }
