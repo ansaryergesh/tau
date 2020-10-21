@@ -37,9 +37,8 @@
         </div> -->
         <nav class="mb-5 navbar navbar-expand-lg navbar-light navbar-fixed-top navmain transparent">
             <div class="container">
-                <div class="navcubic"></div>
                 <a class="navbar-brand logo" href="index.html">
-                    <img src="img/svg/Group 2.svg" alt="" />
+                    <img src="img/logotau.svg" alt="" />
                 </a>
                 <button class="navbar-toggler burger" type="button" data-toggle="collapse" data-target="#navmain"
                     aria-controls="navmain" aria-expanded="false" aria-label="Toggle navigation">
@@ -73,8 +72,31 @@
             наши товары
         </p>
         <img src="img/svg/graph.svg" alt="" />
+        <div class="modalblock " id="#modal1">
+            <div class="div"></div>
+            <div class="modalblock--content">
+
+                <img src="img/svg/using1.svg" alt="">
+                <div class="text">
+                    <h2>МАГИСТРАЛЬНАЯ СЕТЬ<br>
+                        ВЫСОКОГО НАПРЯЖЕНИЯ</h2>
+                    <p>Наша команда никогда не останавливается<br>
+                        на достигнутом, мы постоянно работаем над улучшением <br>качества сервиса и расширением портфеля
+                        товаров
+                        и
+                        услуг.</p>
+                    <button>Узнать подробнее</button>
+                </div>
+
+
+            </div>
+
+
+            <img src="img/modal1.png" alt="">
+            <div class="triangle"></div>
+        </div>
         <div class="icons">
-            <div class="icon icon1" id="icon1" data-modal-target="#modal1">
+            <div class="icon icon1" id="icon1">
                 <img src="img/svg/using1.svg" alt="" />
             </div>
             <div class="icon icon2">
@@ -89,9 +111,11 @@
             <div class="icon icon5">
                 <img src="img/svg/slidericon5.svg" alt="" />
             </div>
+            <div class="icon icon6">
+                <img src="img/svg/neftgaz.svg" alt="" />
+            </div>
         </div>
-        <div class="modalblock" id="#modal1"></div>
-        <div id="overlay"></div>
+
     </div>
 
     <footer class="footer container">
@@ -100,25 +124,29 @@
                 <div class="footerlogo">
                     <!-- <div class="navcubic"></div> -->
                     <a class="logo" href="index.html">
-                        <img src="img/svg/Group 2.svg" alt="" />
+                        <img src="img/logotau.svg" alt="" />
                     </a>
                 </div>
                 <div class="socials mt-5">
                     <p>Мы в соц. сетьях</p>
                     <div class="icons">
-                        <a href=""><i class="fa fa-instagram"></i></a>
-                        <a href=""><i class="fa fa-vk"></i></a>
-                        <a href=""><i class="fa fa-facebook"></i></a>
+                        <div class="icon">
+                            <a href=""><i class="fa fa-instagram"></i></a>
+                        </div>
+                        <div class="icon">
+                            <a href=""><i class="fa fa-vk"></i></a></div>
+                        <div class="icon">
+                            <a href=""><i class="fa fa-facebook"></i></a></div>
                     </div>
                 </div>
             </div>
             <div class="col-md-2"></div>
             <div class="col-md-3">
                 <ul class="footer-links">
-                    <li>О компании</li>
-                    <li>Основные направления</li>
-                    <li>Как мы работаем</li>
-                    <li>Где используют</li>
+                    <li><a href="about.html">О компании</a></li>
+                    <li><a href="catalog1.html"> Основные направления</a></li>
+                    <li><a href="contact.html">Как мы работаем</a></li>
+                    <li><a href="whereuse.html">Где используют</a></li>
                 </ul>
             </div>
             <div class="col-md-4">
@@ -162,35 +190,21 @@
             <p>Разработка <b>Dynamica</b></p>
         </div>
     </footer>
-    <script src="" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script src="js/script.js"></script>
     <script>
-        const openModalButtons = document.querySelectorAll("[data-modal-target]");
-        const overlay = document.getElementById("overlay");
-        const btn = document.querySelector(".icon");
-        openModalButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                const icon = document.querySelector('.icon')
-                const modal = icon.dataset.modalTarget;
-                openModal(modal);
-            })
-        })
+        var modal = document.getElementById("modal1")
+        var btn = document.getElementById('icon1');
 
-        overlay.addEventListener("click", () => {
-            const modals = document.querySelectorAll(".modalblock.active");
-            modals.forEach((modal) => {
-                closeModal(modal);
-            });
-        });
-
-        function openModal(modal) {
-            if (modal == null) return;
-            modal.classList.add("active");
+        btn.onclick = function () {
+            modal.style.display = "block";
         }
 
-        function closeModal(modal) {
-            if (modal == null) return;
-            modal.classList.remove("active");
-            overlay.classList.remove("active");
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
         }
     </script>
 </body>

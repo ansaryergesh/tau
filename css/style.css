@@ -40,22 +40,27 @@ li {
   font-size: 14px;
   line-height: 35px;
   border-bottom: 1px solid #DADADA; }
+  .footer a {
+    color: black !important; }
   .footer .socials {
     display: flex;
     justify-content: space-between; }
-  .footer .logo img {
-    transform: translateX(80%); }
   .footer .footer-links2 {
     font-weight: bold; }
-  .footer .icons a {
-    color: #BBBBBB !important;
-    border-radius: 50%;
-    padding: 10px;
-    background-color: #F5F5F5;
-    height: 36px;
-    width: 36px; }
-    .footer .icons a i {
-      font-size: 20px !important; }
+  .footer .icons {
+    display: flex; }
+    .footer .icons .icon {
+      height: 36px;
+      width: 36px;
+      background-color: #F5F5F5;
+      text-align: center;
+      border-radius: 50%;
+      margin-right: 5px; }
+    .footer .icons a {
+      color: #BBBBBB !important;
+      text-align: center; }
+      .footer .icons a i {
+        font-size: 20px !important; }
   .footer .footer-info {
     display: flex;
     flex-direction: row; }
@@ -85,7 +90,6 @@ li {
 .navigation-top {
   border-bottom: 1px solid #dadada;
   margin-top: 0;
-  height: 38px;
   display: flex;
   align-items: center; }
 
@@ -93,13 +97,13 @@ li {
   font-family: "Gulim" !important;
   font-size: 11px;
   line-height: 13px;
-  margin-top: 15px; }
+  margin: 0 auto;
+  margin-top: 18px; }
   .nav--secondary ul li {
-    margin-right: 15px; }
+    padding: 0 8px; }
     .nav--secondary ul li i {
       color: #ACB3FF;
-      font-size: 17px;
-      margin-right: 5px; }
+      font-size: 17px; }
 
 .nav--languages {
   float: left;
@@ -109,12 +113,15 @@ li {
 .nav--contacts {
   float: right;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  height: 100% !important; }
   .nav--contacts li {
-    padding-left: 0 15px;
     height: 100% !important; }
-    .nav--contacts li:not(:last-child) {
-      border-left: 1px solid #dedede; }
+    .nav--contacts li:first-child {
+      border-left: 1px solid #dedede;
+      border-right: 1px solid #dedede; }
+    .nav--contacts li:nth-child(2) {
+      border-right: 1px solid #dedede; }
 
 .navbar-brand {
   padding: 0px; }
@@ -136,9 +143,6 @@ li {
 nav:last-child {
   padding: 0 !important;
   margin: 0 !important; }
-
-.navmain .logo {
-  transform: translateX(50%); }
 
 #navmain ul li a {
   color: black !important;
@@ -330,10 +334,17 @@ nav:last-child {
   border-radius: 10px 85px 10px 10px;
   -moz-border-radius: 10px 85px 10px 10px;
   -webkit-border-radius: 10px 85px 10px 10px;
-  cursor: pointer; }
-  .direction--active {
+  cursor: pointer;
+  transition: 0.3s all; }
+  .direction:hover {
     background-color: #07ad68;
     color: white; }
+    .direction:hover img {
+      filter: brightness(0) invert(1); }
+  .direction--active .icon {
+    background: #07ad68;
+    -webkit-mask-image: url(../img/svg/dir4.svg);
+    mask-image: url(../img/svg/dir4.svg); }
   .direction p {
     font-size: 20px;
     line-height: 23px;
@@ -352,8 +363,8 @@ nav:last-child {
     justify-content: center;
     cursor: pointer; }
   .companies img {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+    -webkit-filter: grayscale(300%);
+    filter: grayscale(300%);
     padding: 15px 0; }
 
 .cooperation {
@@ -378,6 +389,17 @@ nav:last-child {
 @media only screen and (min-width: 768px) {
   .directions {
     display: grid; }
+  .contact {
+    position: relative; }
+  .map {
+    -webkit-clip-path: polygon(0% 88%, 50% 0%, 50% 0%, 100% 88%);
+    clip-path: polygon(0% 88%, 50% 0%, 50% 0%, 100% 88%);
+    height: 100vh;
+    position: absolute;
+    top: -8%;
+    width: 80%;
+    height: 105%;
+    right: -5%; }
   .direction {
     margin-right: 7%;
     border: 0px solid #000000; } }
@@ -385,6 +407,9 @@ nav:last-child {
 @media only screen and (max-width: 768px) {
   .direction {
     margin: 15px 15px; }
+  .map {
+    position: inherit;
+    width: 100%; }
   .catalogs {
     display: grid;
     grid-template-columns: minmax(0, 1fr) !important; }
@@ -456,7 +481,17 @@ nav:last-child {
   display: flex; }
   .about .responsi--img {
     float: right;
-    width: 70%; }
+    width: 70%;
+    position: relative; }
+  .about .responsi .triangle {
+    width: 205px;
+    height: 140px;
+    background-color: #07ad68;
+    -webkit-clip-path: polygon(0% 88%, 50% 0%, 50% 0%, 100% 88%);
+    clip-path: polygon(0% 88%, 50% 0%, 50% 0%, 100% 88%);
+    position: absolute;
+    top: 4%;
+    right: -5%; }
   .about .responsi p {
     font-size: 16px;
     line-height: 19px;
@@ -481,8 +516,7 @@ nav:last-child {
   .about .partners div {
     padding: 35px 0; }
   .about .partners div:first-child {
-    color: white;
-    background-color: #07ad68;
+    color: black;
     text-align: center;
     display: flex;
     align-items: center; }
@@ -570,24 +604,31 @@ nav:last-child {
       color: white !important;
       background-color: #07ad70;
       border-radius: 11px;
-      padding: 17px 25px;
-      width: 80%; }
+      padding: 17px 15px;
+      width: 80%;
+      text-align: center; }
   .orderuse .order {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); }
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px; }
   .orderuse .using {
     display: flex;
     align-items: center; }
     .orderuse .using img {
+      cursor: pointer;
       background-color: white;
       border-radius: 50%;
       padding: 15px;
-      margin-right: 15px; }
+      height: 76px;
+      width: 76px;
+      margin-right: 15px;
+      margin-bottom: 5px; }
     .orderuse .using p {
       font-family: CTCSplashRounded;
       font-size: 14px;
       line-height: 16px;
-      font-weight: bold; }
+      font-weight: bold;
+      text-transform: uppercase; }
 
 .openedcatalog .more {
   text-align: center;
@@ -671,14 +712,11 @@ nav:last-child {
         border: 1px solid #07ad68;
         border-radius: 7px; }
   .fullcatalog .imgs img {
+    width: 66px;
+    height: 66px;
     padding: 15px;
     border-radius: 50%;
     border: 1px solid #07ad68; }
-
-.contact .map {
-  -webkit-clip-path: polygon(0% 88%, 50% 0%, 50% 0%, 100% 88%);
-  clip-path: polygon(0% 88%, 50% 0%, 50% 0%, 100% 88%);
-  height: 100vh; }
 
 .contact--info {
   display: flex;
@@ -718,8 +756,8 @@ nav:last-child {
     width: 100%; }
   .contact--us .input-block input,
   .contact--us .input-block textarea {
-    background: #FFFFFF;
-    border: 1px solid #D0D0D0;
+    background: #ffffff;
+    border: 1px solid #d0d0d0;
     border-radius: 5px;
     padding: 12px;
     color: black; }
@@ -728,7 +766,7 @@ nav:last-child {
   padding: 12px;
   border-radius: 5px;
   color: white;
-  background-color: #07AD68;
+  background-color: #07ad68;
   font-size: 14px;
   line-height: 16px;
   border: none; }
@@ -775,23 +813,70 @@ nav:last-child {
     padding: 1.4% 1%;
     top: 35%;
     right: 5%; }
+  .whereuse .icon6 {
+    position: absolute;
+    padding: 1.4%;
+    top: 68%;
+    left: -2%; }
   .whereuse .modalblock {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    opacity: 0;
+    transform: translate(-50%, -50%) scale(1);
+    box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.081);
+    opacity: 1;
     transition: 200ms ease-in-out;
     border-radius: 10px;
     z-index: 10;
     background-color: #fff;
     width: 500px;
     max-width: 80%;
-    border: 1px solid #000;
-    height: 500px; }
-  .whereuse .modalblock.active {
-    transform: translate(-50%, -50%) scale(1);
-    opacity: 1; }
+    display: none; }
+    .whereuse .modalblock--content {
+      position: relative;
+      padding: 25px;
+      clear: left; }
+      .whereuse .modalblock--content .text {
+        position: absolute;
+        float: right;
+        padding: 15px;
+        padding-right: 25px; }
+      .whereuse .modalblock--content img {
+        position: absolute;
+        float: left; }
+    .whereuse .modalblock .triangle {
+      position: absolute;
+      width: 0;
+      height: 0;
+      bottom: 0;
+      z-index: -1;
+      border-style: solid;
+      border-width: 150px 0 0 150px;
+      border-color: transparent transparent transparent #121842; }
+    .whereuse .modalblock img {
+      width: 20%; }
+      .whereuse .modalblock img:first-child {
+        width: 10%; }
+    .whereuse .modalblock h2 {
+      font-family: AvenirNext;
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: bold;
+      text-transform: uppercase; }
+    .whereuse .modalblock p {
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 0.048px;
+      margin-bottom: 50px; }
+    .whereuse .modalblock button {
+      border: none;
+      background-color: #07ad68;
+      color: white;
+      padding: 5px 15px;
+      border-radius: 5px; }
+  .whereuse .modalblock.nonactive {
+    opacity: 0;
+    visibility: hidden; }
   .whereuse #overlay {
     background-color: rgba(0, 0, 0, 0.4);
     opacity: 0;
@@ -801,7 +886,8 @@ nav:last-child {
     right: 0;
     bottom: 0;
     pointer-events: none;
-    transition: 200ms ease-in-out; }
+    transition: 200ms ease-in-out;
+    visibility: hidden; }
   .whereuse #overlay.active {
     opacity: 0.2;
     pointer-events: all; }

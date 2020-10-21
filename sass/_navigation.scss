@@ -2,7 +2,6 @@
 .navigation-top {
     border-bottom: 1px solid #dadada;
     margin-top: 0;
-    height: 38px;
     display: flex;
     align-items: center;
 }
@@ -12,17 +11,17 @@
         font-family: "Gulim" !important;
         font-size: 11px;
         line-height: 13px;
-
-        margin-top: 15px;
+        margin: 0 auto;
+        margin-top: 18px;
+        // padding: 10px 0;
 
         ul {
             li {
-                margin-right: 15px;
+                padding: 0 8px;
 
                 i {
                     color: $nav-secondary;
                     font-size: 17px;
-                    margin-right: 5px;
                 }
             }
         }
@@ -38,14 +37,27 @@
         float: right;
         display: flex;
         justify-content: space-between;
+        height: 100% !important;
 
         li {
-            padding-left: 0 15px;
+
+
             height: 100% !important;
 
-            &:not(:last-child) {
+            &:first-child {
                 border-left: 1px solid #dedede;
+                border-right: 1px solid #dedede;
+
             }
+
+            &:nth-child(2) {
+                border-right: 1px solid #dedede;
+                // padding: 0 5px;
+            }
+
+            // &:not(:last-child) {
+            //     border-left: 1px solid #dedede;
+            // }
         }
     }
 }
@@ -81,7 +93,7 @@ nav:last-child {
 
 .navmain {
     .logo {
-        transform: translateX(50%);
+        // transform: translateX(50%);
     }
 }
 

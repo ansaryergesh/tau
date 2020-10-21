@@ -5,13 +5,17 @@
     line-height: 35px;
     border-bottom: 1px solid #DADADA;
 
+    a {
+        color: black !important
+    }
+
     .socials {
         display: flex;
         justify-content: space-between;
     }
 
     .logo img {
-        transform: translateX(80%);
+        // transform: translateX(80%);
     }
 
     .footer-links2 {
@@ -19,13 +23,21 @@
     }
 
     .icons {
-        a {
-            color: #BBBBBB !important;
-            border-radius: 50%;
-            padding: 10px;
-            background-color: #F5F5F5;
+        display: flex;
+
+        .icon {
             height: 36px;
             width: 36px;
+            background-color: #F5F5F5;
+            text-align: center;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+
+        a {
+            color: #BBBBBB !important;
+            text-align: center;
+
 
             i {
                 font-size: 20px !important;
