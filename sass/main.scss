@@ -1065,6 +1065,23 @@
     }
 
     &--content {
+      position: relative;
+
+      .closebtn {
+        position: absolute;
+        color: rgb(213, 210, 210);
+        top: -3%;
+        font-size: 20px;
+        right: 1%;
+        padding: 5px 10px;
+        cursor: pointer;
+        border-radius: 50%;
+
+        &:hover {
+          color: black;
+        }
+      }
+
       .text {
         position: absolute;
         display: flex;

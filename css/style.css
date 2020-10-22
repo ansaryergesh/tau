@@ -885,8 +885,20 @@ nav:last-child {
       left: 0; }
     .whereuse .modalblock--content {
       position: relative;
+      position: relative;
       padding: 25px;
       clear: left; }
+      .whereuse .modalblock--content .closebtn {
+        position: absolute;
+        color: #d5d2d2;
+        top: -3%;
+        font-size: 20px;
+        right: 1%;
+        padding: 5px 10px;
+        cursor: pointer;
+        border-radius: 50%; }
+        .whereuse .modalblock--content .closebtn:hover {
+          color: black; }
       .whereuse .modalblock--content .text {
         position: absolute;
         display: flex;
