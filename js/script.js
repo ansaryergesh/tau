@@ -25,21 +25,20 @@ $(document).ready(function(){
 
 
 
-var btn = document.querySelector(".icon");
+var modal = document.getElementsByClassName("modalblock");
+var btn = document.getElementsByClassName("icon");
+var overlay = document.getElementById('overlay')
 var closebtn = document.querySelector('.closebtn')
-btn.addEventListener("click", () => {
-    var modal = btn.dataset.modalType;
-    document.style.display = "block";
-});
-
-window.addEventListener("click", (e) => {
-    if (e.target != modal && modal.style.display == 'none') {
-        modal.style.display = "none";
-    }
-});
-
-closebtn.addEventListener("click", () => {
-        modal.style.display = "none";
-});
-
+for(let i=0; i<modal.length; i++) {
+    btn[i].addEventListener("click", () => {
+        modal[i].style.display = "block";
+    });
+    
+    window.addEventListener('click', (e) => {
+        if(e.target == modal[i]) {
+            modal[i].style.display = 'none'
+        }
+    })
+    
+}
 

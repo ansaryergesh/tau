@@ -889,36 +889,37 @@ nav:last-child {
     left: -2%; }
   .whereuse .modalblock {
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.081);
-    opacity: 1;
-    transition: 200ms ease-in-out;
-    border-radius: 10px;
-    z-index: 10;
-    background-color: #fff;
-    min-width: 400px;
-    width: 30%;
-    height: 300px;
+    top: 0;
+    left: 0;
+    padding-top: 15%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.027);
     display: none;
-    transition: .5s all; }
+    transition: .5s all;
+    height: 100%;
+    width: 100%; }
     .whereuse .modalblock .modalimg1 {
       position: absolute;
       bottom: 0;
-      left: 0; }
+      left: 0;
+      z-index: 2; }
     .whereuse .modalblock--content {
       position: relative;
+      border-radius: 10px;
+      min-width: 400px;
+      width: 30%;
+      height: 300px;
+      margin: auto;
+      background-color: white;
       position: relative;
       padding: 25px;
       clear: left; }
       .whereuse .modalblock--content .closebtn {
         position: absolute;
-        color: #d5d2d2;
-        top: -3%;
-        font-size: 20px;
-        right: 1%;
-        padding: 5px 10px;
+        color: #cac7c7;
+        top: -5%;
+        font-size: 28px;
+        right: 2%;
         cursor: pointer;
         border-radius: 50%; }
         .whereuse .modalblock--content .closebtn:hover {
@@ -944,7 +945,8 @@ nav:last-child {
       width: 0;
       height: 0;
       bottom: 0;
-      z-index: -1;
+      z-index: 1;
+      left: 0;
       border-style: solid;
       border-width: 150px 0 0 150px;
       border-color: transparent transparent transparent #121842; }
