@@ -1,16 +1,15 @@
 @import url("../fonts.css");
-$nav-secondary:#ACB3FF;
-$green-color: #4DBB91;
+$nav-secondary: #acb3ff;
+$green-color: #4dbb91;
 
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 
-    *,
-    *:before,
-    *:after {
-        box-sizing: inherit;
-    }
-
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
 }
 
 h1,
@@ -18,35 +17,33 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: no_name_37
+  font-family: no_name_37;
 }
 
-
-
 body {
-    font-family: Avenir Next;
-    margin: 0 !important;
-    padding: 0 !important;
-    overflow-x: hidden;
+  font-family: Avenir Next;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden !important;
 }
 
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
 a {
-    text-decoration: none;
-    cursor: pointer;
+  text-decoration: none;
+  cursor: pointer;
 
-    &:hover {
-        text-decoration: none;
-    }
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
