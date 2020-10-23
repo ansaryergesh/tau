@@ -568,7 +568,6 @@
 
   .customers {
     display: flex;
-
     align-items: center;
 
     .text {
@@ -1105,6 +1104,7 @@
     transition: .5s all;
     height: 100%;
     width: 100%;
+    animation: fadeIn .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
 
     .modalimg1 {
       position: absolute;
@@ -1121,6 +1121,7 @@
       height: 300px;
       margin: auto;
       background-color: white;
+      animation: roadRunnerIn .3s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
 
       .closebtn {
         position: absolute;
@@ -1491,4 +1492,14 @@ hr {
 
 .slick-arrow.slick-hidden {
   display: none;
+}
+
+@keyframes fadeIn {
+  0% {
+    background: rgba(0, 0, 0, .0);
+  }
+
+  100% {
+    background: rgba(0, 0, 0, 0.163);
+  }
 }

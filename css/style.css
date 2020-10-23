@@ -897,7 +897,8 @@ nav:last-child {
     display: none;
     transition: .5s all;
     height: 100%;
-    width: 100%; }
+    width: 100%;
+    animation: fadeIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
     .whereuse .modalblock .modalimg1 {
       position: absolute;
       bottom: 0;
@@ -911,6 +912,7 @@ nav:last-child {
       height: 300px;
       margin: auto;
       background-color: white;
+      animation: roadRunnerIn 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
       position: relative;
       padding: 25px;
       clear: left; }
@@ -1187,3 +1189,9 @@ hr {
 
 .slick-arrow.slick-hidden {
   display: none; }
+
+@keyframes fadeIn {
+  0% {
+    background: rgba(0, 0, 0, 0); }
+  100% {
+    background: rgba(0, 0, 0, 0.163); } }
