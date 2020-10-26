@@ -904,7 +904,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    color: #000000;
+    a {
+      color: #000000 !important;
+    }
     img {
     }
 
@@ -1651,7 +1654,7 @@ hr {
     border-radius: 9px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-betweencatalogmain;
     h4 {
       font-size: 14px;
       line-height: 16px;

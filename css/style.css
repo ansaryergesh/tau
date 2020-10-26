@@ -753,7 +753,10 @@ nav:last-child {
   .fullcatalog .catalogmain {
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    color: #000000; }
+    .fullcatalog .catalogmain a {
+      color: #000000 !important; }
     .fullcatalog .catalogmain--head p {
       font-size: 20px;
       line-height: 23px;
@@ -1291,7 +1294,7 @@ hr {
     border-radius: 9px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; }
+    justify-content: space-betweencatalogmain; }
     .sameorders .order h4 {
       font-size: 14px;
       line-height: 16px;
