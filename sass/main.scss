@@ -24,11 +24,8 @@
   }
 }
 
-
-
 .sliderbar {
   margin-top: 0 !important;
-
 
   .textbar {
     height: 60vh;
@@ -87,8 +84,6 @@
     }
   }
 
-
-
   .slidingbar {
     margin-left: 25%;
     height: 50vh;
@@ -134,44 +129,56 @@
   }
 
   .slidingbar1 {
-    background-image: linear-gradient(to bottom right,
+    background-image: linear-gradient(
+        to bottom right,
         rgba(56, 26, 131, 0.911),
-        rgba(56, 26, 131, 0.599)),
+        rgba(56, 26, 131, 0.599)
+      ),
       url(../img/triangle2.png);
   }
 
   .slidingbar2 {
-    background-image: linear-gradient(to bottom right,
+    background-image: linear-gradient(
+        to bottom right,
         rgba(56, 26, 131, 0.911),
-        rgba(56, 26, 131, 0.599)),
+        rgba(56, 26, 131, 0.599)
+      ),
       url(../img/triangle1.png);
   }
 
   .slidingbar6 {
-    background-image: linear-gradient(to bottom right,
+    background-image: linear-gradient(
+        to bottom right,
         rgba(56, 26, 131, 0.911),
-        rgba(56, 26, 131, 0.599)),
+        rgba(56, 26, 131, 0.599)
+      ),
       url(../img/neftgaz.png);
   }
 
   .slidingbar3 {
-    background-image: linear-gradient(to bottom right,
+    background-image: linear-gradient(
+        to bottom right,
         rgba(56, 26, 131, 0.911),
-        rgba(56, 26, 131, 0.599)),
+        rgba(56, 26, 131, 0.599)
+      ),
       url(../img/triangle3.png);
   }
 
   .slidingbar4 {
-    background-image: linear-gradient(to bottom right,
+    background-image: linear-gradient(
+        to bottom right,
         rgba(56, 26, 131, 0.911),
-        rgba(56, 26, 131, 0.599)),
+        rgba(56, 26, 131, 0.599)
+      ),
       url(../img/triangle4.png);
   }
 
   .slidingbar5 {
-    background-image: linear-gradient(to bottom right,
+    background-image: linear-gradient(
+        to bottom right,
         rgba(56, 26, 131, 0.911),
-        rgba(56, 26, 131, 0.599)),
+        rgba(56, 26, 131, 0.599)
+      ),
       url(../img/triangle5.png);
   }
 
@@ -336,9 +343,6 @@
         }
       }
     }
-
-
-
   }
 
   .contact {
@@ -366,8 +370,6 @@
   .direction {
     margin: 15px 15px;
   }
-
-
 
   .whereusing {
     &--action {
@@ -566,35 +568,6 @@
     }
   }
 
-  .customers {
-    display: flex;
-    align-items: center;
-
-    .text {
-      width: 13%;
-      text-align: center;
-    }
-
-    .customer-logos {
-      display: grid;
-      align-items: center;
-
-      height: 100px;
-
-      .slide {
-        // height: 35px;
-        padding: 10px;
-      }
-
-      img {
-        -webkit-filter: grayscale(100%);
-        filter: grayscale(100%);
-        height: 100%;
-        // width: 100%;
-      }
-    }
-  }
-
   .partners {
     grid-template-columns: repeat(7, 1fr);
 
@@ -602,7 +575,8 @@
       display: flex;
       align-items: center;
 
-      .slide {}
+      .slide {
+      }
     }
 
     div {
@@ -630,6 +604,34 @@
   }
 }
 
+.customers {
+  display: flex;
+  align-items: center;
+
+  .text {
+    width: 13%;
+    text-align: center;
+  }
+
+  .customer-logos {
+    display: grid;
+    align-items: center;
+
+    height: 100px;
+
+    .slide {
+      // height: 35px;
+      padding: 10px;
+    }
+
+    img {
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+      height: 100%;
+      // width: 100%;
+    }
+  }
+}
 // catalog1
 
 .catalog1 {
@@ -680,7 +682,8 @@
       height: 100%;
     }
 
-    &--1 {}
+    &--1 {
+    }
 
     .symbol {
       position: absolute;
@@ -821,22 +824,22 @@
 
     object-fit: cover;
   }
-
 }
 
 .kabelopened {
-  background: linear-gradient(to right,
+  background: linear-gradient(
+      to right,
       #121842,
       #121842e3,
       #131944c2,
-      #131944ba),
+      #131944ba
+    ),
     url(../img/behlevelkabel2.png);
   background-repeat: no-repeat;
   background-size: cover;
   // position: relative;
   background-position: 50% 75%;
 }
-
 
 .openedcataloghead {
   padding: 25px;
@@ -902,7 +905,8 @@
     justify-content: space-between;
     align-items: center;
 
-    img {}
+    img {
+    }
 
     &--head {
       p {
@@ -1101,10 +1105,10 @@
     background-color: rgba(0, 0, 0, 0.027);
     // display: block;
     display: none;
-    transition: .5s all;
+    transition: 0.5s all;
     height: 100%;
     width: 100%;
-    animation: fadeIn .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+    animation: fadeIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 
     .modalimg1 {
       position: absolute;
@@ -1121,7 +1125,7 @@
       height: 300px;
       margin: auto;
       background-color: white;
-      animation: roadRunnerIn .3s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+      animation: roadRunnerIn 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 
       .closebtn {
         position: absolute;
@@ -1149,11 +1153,10 @@
         padding-right: 25px;
 
         a {
-          color: white !important
+          color: white !important;
         }
 
         button {
-
           margin-left: auto;
         }
       }
@@ -1242,7 +1245,6 @@
 
 hr {
   margin-bottom: 0 !important;
-  ;
 }
 
 .neftgaz,
@@ -1258,42 +1260,72 @@ hr {
 }
 
 .neftgaz {
-  background: linear-gradient(203.4deg, rgba(115, 65, 243, 0.776) -46.75%, rgba(131, 87, 241, 0.428) 79.39%), url(../img/neftgaz.png);
+  background: linear-gradient(
+      203.4deg,
+      rgba(115, 65, 243, 0.776) -46.75%,
+      rgba(131, 87, 241, 0.428) 79.39%
+    ),
+    url(../img/neftgaz.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
 .vetrovaya {
-  background: linear-gradient(203.4deg, rgba(56, 26, 131, 0.66) 46.75%, rgba(56, 26, 131, 0.449) 79.39%), url(../img/vetrovaya.png);
+  background: linear-gradient(
+      203.4deg,
+      rgba(56, 26, 131, 0.66) 46.75%,
+      rgba(56, 26, 131, 0.449) 79.39%
+    ),
+    url(../img/vetrovaya.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
 }
 
 .hydro {
-  background: linear-gradient(203.4deg, rgba(56, 26, 131, 0.66) 46.75%, rgba(56, 26, 131, 0.449) 79.39%), url(../img/hydro.png);
+  background: linear-gradient(
+      203.4deg,
+      rgba(56, 26, 131, 0.66) 46.75%,
+      rgba(56, 26, 131, 0.449) 79.39%
+    ),
+    url(../img/hydro.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
 }
 
 .metallurgia {
-  background: linear-gradient(203.4deg, rgba(56, 26, 131, 0.66) 46.75%, rgba(56, 26, 131, 0.449) 79.39%), url(../img/metalurgia.png);
+  background: linear-gradient(
+      203.4deg,
+      rgba(56, 26, 131, 0.66) 46.75%,
+      rgba(56, 26, 131, 0.449) 79.39%
+    ),
+    url(../img/metalurgia.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
 }
 
 .uranovaya {
-  background: linear-gradient(203.4deg, rgba(56, 26, 131, 0.66) 46.75%, rgba(56, 26, 131, 0.449) 79.39%), url(../img/uran.png);
+  background: linear-gradient(
+      203.4deg,
+      rgba(56, 26, 131, 0.66) 46.75%,
+      rgba(56, 26, 131, 0.449) 79.39%
+    ),
+    url(../img/uran.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
 }
 
 .solnechni {
-  background: linear-gradient(203.4deg, rgba(56, 26, 131, 0.66) 46.75%, rgba(56, 26, 131, 0.449) 79.39%), url(../img/solnechni.png);
+  background: linear-gradient(
+      203.4deg,
+      rgba(56, 26, 131, 0.66) 46.75%,
+      rgba(56, 26, 131, 0.449) 79.39%
+    ),
+    url(../img/solnechni.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
@@ -1313,7 +1345,8 @@ hr {
       letter-spacing: 0.056px;
     }
 
-    .lists {}
+    .lists {
+    }
 
     ul {
       padding-left: 0px !important;
@@ -1323,14 +1356,13 @@ hr {
       letter-spacing: 0.064px;
       font-weight: bold;
 
-
       li {
         margin-bottom: 30px;
       }
 
       li:before {
-        color: #4DBB91;
-        content: '●';
+        color: #4dbb91;
+        content: "●";
         padding-right: 30px;
         font-size: 18px;
       }
@@ -1346,17 +1378,17 @@ hr {
       color: white;
       outline: none !important;
       border: none;
-      background-color: #07AD68;
+      background-color: #07ad68;
       border-radius: 5px;
       padding: 15px;
     }
 
     .solnceimg {
-      padding-top: 25px !important
+      padding-top: 25px !important;
     }
 
     .hydroicon {
-      padding-top: 30px !important
+      padding-top: 30px !important;
     }
 
     .icon {
@@ -1442,7 +1474,7 @@ hr {
 .slick-track:before,
 .slick-track:after {
   display: table;
-  content: '';
+  content: "";
 }
 
 .slick-track:after {
@@ -1460,7 +1492,7 @@ hr {
   min-height: 1px;
 }
 
-[dir='rtl'] .slick-slide {
+[dir="rtl"] .slick-slide {
   float: right;
 }
 
@@ -1496,10 +1528,156 @@ hr {
 
 @keyframes fadeIn {
   0% {
-    background: rgba(0, 0, 0, .0);
+    background: rgba(0, 0, 0, 0);
   }
 
   100% {
     background: rgba(0, 0, 0, 0.163);
+  }
+}
+.detailedinfo {
+  h2 {
+    font-family: AvenirNext;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.675294px;
+
+    color: #000000;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  h3 {
+    font-family: AvenirNext;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #000000;
+    font-weight: bold;
+  }
+}
+.video {
+  height: 295px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.959);
+  position: relative;
+}
+.detailedcatalog {
+  .imgs {
+    display: block;
+    img {
+      width: 51px;
+      height: 51px;
+      padding: 8px;
+      border-radius: 50%;
+      border: 1px solid #07ad68;
+    }
+  }
+
+  .detailedprice {
+    display: flex;
+    align-items: center;
+    p {
+      color: #07ad68;
+      font-family: AvenirNext;
+      font-size: 20px;
+      line-height: 23px;
+      letter-spacing: -0.562745px;
+      font-weight: bold;
+      margin-right: 25px;
+    }
+    button {
+      font-family: AvenirNext;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: -0.450196px;
+
+      color: #ffffff !important;
+      background-color: #07ad68;
+      padding: 10px 21px;
+      border-radius: 7px;
+      border: none;
+    }
+  }
+}
+.character {
+  ul {
+    padding: 0 !important;
+    width: 90%;
+    font-size: 18px;
+    line-height: 21px;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    li {
+      span {
+        float: right;
+        text-align: left;
+      }
+    }
+  }
+}
+
+.detailedopisanie {
+  font-family: AvenirNext;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #000000;
+}
+.detailimg {
+  padding: 85px 45px;
+  border: 1px solid #d1d1d1;
+
+  img {
+    margin: auto;
+    width: 100%;
+  }
+}
+.heading {
+  font-family: AvenirNext;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #000000;
+  font-weight: bold;
+}
+.sameorders {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  .order {
+    padding: 18px 21px;
+    border: 1px solid #d8d8d8;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h4 {
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: -0.393921px;
+    }
+    p {
+      font-family: AvenirNext;
+      font-size: 20px;
+      line-height: 23px;
+      letter-spacing: -0.562745px;
+
+      color: #07ad70;
+      font-weight: bold;
+    }
+    a {
+      color: rgb(0, 0, 0) !important;
+      border: 1px solid #07ad70;
+      border-radius: 8px;
+      padding: 9px 15px;
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+      letter-spacing: -0.393921px;
+      margin-bottom: 15px;
+      color: #000000;
+      font-weight: bold;
+    }
   }
 }
