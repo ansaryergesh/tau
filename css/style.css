@@ -15,7 +15,7 @@ h5 {
   font-family: no_name_37; }
 
 body {
-  font-family: Avenir Next;
+  font-family: AvenirNext !important;
   margin: 0 !important;
   padding: 0 !important;
   overflow-x: hidden !important; }
@@ -368,6 +368,8 @@ nav:last-child {
 .directions--header {
   margin-right: 35px;
   width: 50% !important; }
+  .directions--header p {
+    font-family: AvenirNext; }
 
 .direction {
   padding: 25px;
@@ -378,7 +380,8 @@ nav:last-child {
   -moz-border-radius: 10px 85px 10px 10px;
   -webkit-border-radius: 10px 85px 10px 10px;
   cursor: pointer;
-  transition: 0.3s all; }
+  transition: 0.3s all;
+  font-family: AvenirNext; }
   .direction:hover {
     background-color: #07ad68;
     color: white; }

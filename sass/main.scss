@@ -5,6 +5,7 @@
 .container {
   padding-right: 0 !important;
 }
+
 .sliderbar {
   .textbar {
     height: 45vh;
@@ -39,6 +40,7 @@
     }
   }
 }
+
 // .slide-contenedor {
 //   max-width: 100%;
 //   max-height: 100vh;
@@ -253,6 +255,7 @@
   // transform: translateY(10%);
   height: 1vh;
   padding-right: 0 !important;
+
   .active {
     color: green !important;
     background-color: #07ad68 !important;
@@ -348,6 +351,7 @@
       padding-left: 0 !important;
       margin-right: 0 !important;
     }
+
     h2 {
       font-size: 30px;
       line-height: 31px;
@@ -383,56 +387,44 @@
   }
 
   .slidingbar1 {
-    background-image: linear-gradient(
-        to bottom right,
+    background-image: linear-gradient(to bottom right,
         rgba(56, 26, 131, 0.911),
-        rgba(56, 26, 131, 0.599)
-      ),
+        rgba(56, 26, 131, 0.599)),
       url(../img/triangle2.png);
   }
 
   .slidingbar2 {
-    background-image: linear-gradient(
-        to bottom right,
+    background-image: linear-gradient(to bottom right,
         rgba(56, 26, 131, 0.911),
-        rgba(56, 26, 131, 0.599)
-      ),
+        rgba(56, 26, 131, 0.599)),
       url(../img/triangle1.png);
   }
 
   .slidingbar6 {
-    background-image: linear-gradient(
-        to bottom right,
+    background-image: linear-gradient(to bottom right,
         rgba(56, 26, 131, 0.911),
-        rgba(56, 26, 131, 0.599)
-      ),
+        rgba(56, 26, 131, 0.599)),
       url(../img/neftgaz.png);
   }
 
   .slidingbar3 {
-    background-image: linear-gradient(
-        to bottom right,
+    background-image: linear-gradient(to bottom right,
         rgba(56, 26, 131, 0.911),
-        rgba(56, 26, 131, 0.599)
-      ),
+        rgba(56, 26, 131, 0.599)),
       url(../img/triangle3.png);
   }
 
   .slidingbar4 {
-    background-image: linear-gradient(
-        to bottom right,
+    background-image: linear-gradient(to bottom right,
         rgba(56, 26, 131, 0.911),
-        rgba(56, 26, 131, 0.599)
-      ),
+        rgba(56, 26, 131, 0.599)),
       url(../img/triangle4.png);
   }
 
   .slidingbar5 {
-    background-image: linear-gradient(
-        to bottom right,
+    background-image: linear-gradient(to bottom right,
         rgba(56, 26, 131, 0.911),
-        rgba(56, 26, 131, 0.599)
-      ),
+        rgba(56, 26, 131, 0.599)),
       url(../img/triangle5.png);
   }
 
@@ -484,6 +476,10 @@
 .directions--header {
   margin-right: 35px;
   width: 50% !important;
+
+  p {
+    font-family: AvenirNext;
+  }
 }
 
 .direction {
@@ -496,6 +492,7 @@
   -webkit-border-radius: 10px 85px 10px 10px;
   cursor: pointer;
   transition: 0.3s all;
+  font-family: AvenirNext;
 
   &:hover {
     background-color: #07ad68;
@@ -621,6 +618,7 @@
 }
 
 @media only screen and (max-width: 768px) {
+
   // .responsi,
   // .carousel-indicators {
   //   display: none !important;
@@ -774,6 +772,7 @@
     display: flex;
     padding-right: 0 !important;
     padding-left: 0 !important;
+
     &--text {
       // float: left;
       // clear: right;
@@ -834,8 +833,7 @@
       display: flex;
       align-items: center;
 
-      .slide {
-      }
+      .slide {}
     }
 
     div {
@@ -867,6 +865,7 @@
   display: flex;
   align-items: center;
   padding-right: 0 !important;
+
   .text {
     width: 13%;
     text-align: center;
@@ -941,8 +940,7 @@
       height: 100%;
     }
 
-    &--1 {
-    }
+    &--1 {}
 
     .symbol {
       position: absolute;
@@ -1086,13 +1084,11 @@
 }
 
 .kabelopened {
-  background: linear-gradient(
-      to right,
+  background: linear-gradient(to right,
       #121842,
       #121842e3,
       #131944c2,
-      #131944ba
-    ),
+      #131944ba),
     url(../img/behlevelkabel2.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1169,8 +1165,7 @@
       color: #000000 !important;
     }
 
-    img {
-    }
+    img {}
 
     &--head {
       p {
@@ -1524,11 +1519,9 @@ hr {
 }
 
 .neftgaz {
-  background: linear-gradient(
-      203.4deg,
+  background: linear-gradient(203.4deg,
       rgba(115, 65, 243, 0.776) -46.75%,
-      rgba(131, 87, 241, 0.428) 79.39%
-    ),
+      rgba(131, 87, 241, 0.428) 79.39%),
     url(../img/neftgaz.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1536,11 +1529,9 @@ hr {
 }
 
 .vetrovaya {
-  background: linear-gradient(
-      203.4deg,
+  background: linear-gradient(203.4deg,
       rgba(56, 26, 131, 0.66) 46.75%,
-      rgba(56, 26, 131, 0.449) 79.39%
-    ),
+      rgba(56, 26, 131, 0.449) 79.39%),
     url(../img/vetrovaya.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1548,11 +1539,9 @@ hr {
 }
 
 .hydro {
-  background: linear-gradient(
-      203.4deg,
+  background: linear-gradient(203.4deg,
       rgba(56, 26, 131, 0.66) 46.75%,
-      rgba(56, 26, 131, 0.449) 79.39%
-    ),
+      rgba(56, 26, 131, 0.449) 79.39%),
     url(../img/hydro.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1560,11 +1549,9 @@ hr {
 }
 
 .metallurgia {
-  background: linear-gradient(
-      203.4deg,
+  background: linear-gradient(203.4deg,
       rgba(56, 26, 131, 0.66) 46.75%,
-      rgba(56, 26, 131, 0.449) 79.39%
-    ),
+      rgba(56, 26, 131, 0.449) 79.39%),
     url(../img/metalurgia.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1572,11 +1559,9 @@ hr {
 }
 
 .uranovaya {
-  background: linear-gradient(
-      203.4deg,
+  background: linear-gradient(203.4deg,
       rgba(56, 26, 131, 0.66) 46.75%,
-      rgba(56, 26, 131, 0.449) 79.39%
-    ),
+      rgba(56, 26, 131, 0.449) 79.39%),
     url(../img/uran.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1584,11 +1569,9 @@ hr {
 }
 
 .solnechni {
-  background: linear-gradient(
-      203.4deg,
+  background: linear-gradient(203.4deg,
       rgba(56, 26, 131, 0.66) 46.75%,
-      rgba(56, 26, 131, 0.449) 79.39%
-    ),
+      rgba(56, 26, 131, 0.449) 79.39%),
     url(../img/solnechni.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1609,8 +1592,7 @@ hr {
       letter-spacing: 0.056px;
     }
 
-    .lists {
-    }
+    .lists {}
 
     ul {
       padding-left: 0px !important;
@@ -1831,6 +1813,7 @@ hr {
 
 .detailedcatalog {
   padding-right: 0 !important;
+
   .imgs {
     display: block;
 
