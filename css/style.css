@@ -547,7 +547,8 @@ nav:last-child {
     width: 80%; }
 
 .about .responsi {
-  display: flex; }
+  display: flex;
+  padding-right: 0 !important; }
   .about .responsi--img {
     float: right;
     width: 70%;
@@ -600,7 +601,8 @@ nav:last-child {
 
 .customers {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  padding-right: 0 !important; }
   .customers .text {
     width: 13%;
     text-align: center; }
@@ -1256,36 +1258,37 @@ hr {
   background-color: rgba(0, 0, 0, 0.959);
   position: relative; }
 
-.detailedcatalog .imgs {
-  display: block; }
-  .detailedcatalog .imgs img {
-    width: 51px;
-    height: 51px;
-    padding: 8px;
-    border-radius: 50%;
-    border: 1px solid #07ad68; }
-
-.detailedcatalog .detailedprice {
-  display: flex;
-  align-items: center; }
-  .detailedcatalog .detailedprice p {
-    color: #07ad68;
-    font-family: AvenirNext;
-    font-size: 20px;
-    line-height: 23px;
-    letter-spacing: -0.562745px;
-    font-weight: bold;
-    margin-right: 25px; }
-  .detailedcatalog .detailedprice button {
-    font-family: AvenirNext;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: -0.450196px;
-    color: #ffffff !important;
-    background-color: #07ad68;
-    padding: 10px 21px;
-    border-radius: 7px;
-    border: none; }
+.detailedcatalog {
+  padding-right: 0 !important; }
+  .detailedcatalog .imgs {
+    display: block; }
+    .detailedcatalog .imgs img {
+      width: 51px;
+      height: 51px;
+      padding: 8px;
+      border-radius: 50%;
+      border: 1px solid #07ad68; }
+  .detailedcatalog .detailedprice {
+    display: flex;
+    align-items: center; }
+    .detailedcatalog .detailedprice p {
+      color: #07ad68;
+      font-family: AvenirNext;
+      font-size: 20px;
+      line-height: 23px;
+      letter-spacing: -0.562745px;
+      font-weight: bold;
+      margin-right: 25px; }
+    .detailedcatalog .detailedprice button {
+      font-family: AvenirNext;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: -0.450196px;
+      color: #ffffff !important;
+      background-color: #07ad68;
+      padding: 10px 21px;
+      border-radius: 7px;
+      border: none; }
 
 .character ul {
   padding: 0 !important;

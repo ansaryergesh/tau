@@ -765,7 +765,7 @@
 
   .responsi {
     display: flex;
-
+    padding-right: 0 !important;
     &--text {
       // float: left;
       // clear: right;
@@ -858,7 +858,7 @@
 .customers {
   display: flex;
   align-items: center;
-
+  padding-right: 0 !important;
   .text {
     width: 13%;
     text-align: center;
@@ -867,7 +867,6 @@
   .customer-logos {
     display: grid;
     align-items: center;
-
     height: 100px;
 
     .slide {
@@ -1823,6 +1822,7 @@ hr {
 }
 
 .detailedcatalog {
+  padding-right: 0 !important;
   .imgs {
     display: block;
 
