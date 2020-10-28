@@ -195,6 +195,9 @@ nav:last-child {
 .animated-icon1 span {
   background: #050505; }
 
+.container {
+  padding-right: 0 !important; }
+
 .sliderbar .textbar {
   height: 45vh;
   background: linear-gradient(203.4deg, #2b3679 -46.75%, #131944 79.39%);
@@ -548,7 +551,8 @@ nav:last-child {
 
 .about .responsi {
   display: flex;
-  padding-right: 0 !important; }
+  padding-right: 0 !important;
+  padding-left: 0 !important; }
   .about .responsi--img {
     float: right;
     width: 70%;
