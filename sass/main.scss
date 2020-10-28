@@ -2,6 +2,246 @@
 @import "footer";
 @import "navigation";
 
+.sliderbar {
+  .textbar {
+    height: 45vh;
+    background: linear-gradient(203.4deg, #2b3679 -46.75%, #131944 79.39%);
+    position: relative;
+    z-index: -1;
+
+    &--block {
+      img {
+        height: 100%;
+        margin-right: 25px;
+      }
+
+      float: right;
+      left: 40%;
+      display: flex;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    h2 {
+      font-size: 55px;
+      color: white;
+      line-height: 57px;
+    }
+
+    a {
+      color: #4dbb91 !important;
+      font-size: 18px;
+      line-height: 21px;
+    }
+  }
+}
+// .slide-contenedor {
+//   max-width: 100%;
+//   max-height: 100vh;
+//   width: 100%;
+//   height: 100%;
+//   position: relative;
+//   overflow: hidden;
+//   margin: auto;
+//   background-color: rgba(0, 0, 0, 0.619);
+//   .slidingbar {
+//     margin-left: 25%;
+//     height: 50vh;
+//     color: white;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: bottom center;
+//     z-index: -1;
+//     position: relative;
+
+//     h2 {
+//       font-size: 30px;
+//       line-height: 31px;
+//     }
+
+//     p {
+//       font-size: 16px;
+//       line-height: 19px;
+//       letter-spacing: 0.064px;
+//       // margin-left: 15px;
+//     }
+
+//     &--content {
+//       img {
+//         transform: translateX(-100%);
+//         margin-bottom: 25px;
+//       }
+
+//       left: 33%;
+//       transform: translateX(-50%);
+//       top: 50%;
+//       transform: translateY(-50%);
+//       position: absolute;
+//     }
+
+//     &--text {
+//       display: flex;
+//     }
+
+//     .icon {
+//       margin-left: 55px;
+//     }
+//   }
+
+//   .slidingbar1 {
+//     background-image: linear-gradient(
+//         to bottom right,
+//         rgba(56, 26, 131, 0.911),
+//         rgba(56, 26, 131, 0.599)
+//       ),
+//       url(../img/triangle2.png);
+//   }
+
+//   .slidingbar2 {
+//     background-image: linear-gradient(
+//         to bottom right,
+//         rgba(56, 26, 131, 0.911),
+//         rgba(56, 26, 131, 0.599)
+//       ),
+//       url(../img/triangle1.png);
+//   }
+
+//   .slidingbar6 {
+//     background-image: linear-gradient(
+//         to bottom right,
+//         rgba(56, 26, 131, 0.911),
+//         rgba(56, 26, 131, 0.599)
+//       ),
+//       url(../img/neftgaz.png);
+//   }
+
+//   .slidingbar3 {
+//     background-image: linear-gradient(
+//         to bottom right,
+//         rgba(56, 26, 131, 0.911),
+//         rgba(56, 26, 131, 0.599)
+//       ),
+//       url(../img/triangle3.png);
+//   }
+
+//   .slidingbar4 {
+//     background-image: linear-gradient(
+//         to bottom right,
+//         rgba(56, 26, 131, 0.911),
+//         rgba(56, 26, 131, 0.599)
+//       ),
+//       url(../img/triangle4.png);
+//   }
+
+//   .slidingbar5 {
+//     background-image: linear-gradient(
+//         to bottom right,
+//         rgba(56, 26, 131, 0.911),
+//         rgba(56, 26, 131, 0.599)
+//       ),
+//       url(../img/triangle5.png);
+//   }
+
+//   .sliderbottom {
+//     padding: 48px 0;
+//     padding-right: 80px;
+//     float: right;
+//     margin-bottom: 50px;
+
+//     h2 {
+//       display: flex;
+//       justify-content: center;
+//       font-size: 36px;
+//       line-height: 37px;
+//       margin-bottom: 45px;
+//     }
+
+//     a {
+//       border: 1px solid #07ad4e;
+//       font-size: 20px;
+//       line-height: 23px;
+//       font-weight: bold;
+//       padding: 10px 17px;
+//       color: #000000;
+//     }
+//   }
+//   .miSlider {
+//     width: 100%;
+//     max-height: 100vh;
+//     height: 100vh;
+//     color: white;
+//     transition: 2s;
+//     .imagebar {
+//       transform: translateY(-15%);
+//       z-index: 1000;
+//       position: static;
+//     }
+//     .greentr {
+//       position: absolute;
+//       left: 25%;
+//       top: 12%;
+//     }
+//   }
+//   .direcciones {
+//     width: 100%;
+//     height: 100%;
+//     position: absolute;
+//     top: 0;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//   }
+
+//   .direcciones a i {
+//     color: teal;
+//     display: inline-block;
+//     padding: 20px;
+//     font-size: 50px;
+//   }
+
+//   .direcciones a i:hover {
+//     background: rgba(0, 0, 0, 0.2);
+//     transition: 0.5s;
+//   }
+
+//   .barras {
+//     position: absolute;
+//     bottom: 0;
+//     width: 100%;
+//     display: flex;
+//     justify-content: center;
+//     margin-bottom: 15px;
+//   }
+//   .barra {
+//     cursor: pointer;
+//     background: #b4a2d5;
+//     display: inline-block;
+//     height: 25px !important;
+//     width: 20px !important;
+//     clip-path: polygon(51% 55%, 0% 100%, 100% 100%);
+//     margin: 0 1px;
+//   }
+//   .active {
+//     color: green !important;
+//     background-color: #07ad68 !important;
+//   }
+
+//   .fade {
+//     animation-name: fade;
+//     animation-duration: 1.5s;
+//   }
+// }
+
+// @keyframes fade {
+//   from {
+//     opacity: 0.8;
+//   }
+//   to {
+//     opacity: 1;
+//   }
+// }
+
 .carousel-indicators {
   position: absolute;
   top: 45%;
@@ -9,7 +249,7 @@
   transform: translateX(50%);
   // transform: translateY(10%);
   height: 1vh;
-
+  padding-right: 0 !important;
   .active {
     color: green !important;
     background-color: #07ad68 !important;
@@ -26,6 +266,7 @@
 
 .sliderbar {
   margin-top: 0 !important;
+  padding-right: 0 !important;
 
   .textbar {
     height: 60vh;
@@ -93,7 +334,17 @@
     background-position: bottom center;
     z-index: -1;
     position: relative;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    margin-right: 0 !important;
 
+    #myCarousel,
+    .carousel-inner,
+    .carousel-item .active {
+      padding-right: 0 !important;
+      padding-left: 0 !important;
+      margin-right: 0 !important;
+    }
     h2 {
       font-size: 30px;
       line-height: 31px;
@@ -632,6 +883,7 @@
     }
   }
 }
+
 // catalog1
 
 .catalog1 {
@@ -905,9 +1157,11 @@
     justify-content: space-between;
     align-items: center;
     color: #000000;
+
     a {
       color: #000000 !important;
     }
+
     img {
     }
 
@@ -1538,6 +1792,7 @@ hr {
     background: rgba(0, 0, 0, 0.163);
   }
 }
+
 .detailedinfo {
   h2 {
     font-family: AvenirNext;
@@ -1549,6 +1804,7 @@ hr {
     font-weight: bold;
     text-transform: uppercase;
   }
+
   h3 {
     font-family: AvenirNext;
     font-size: 18px;
@@ -1558,15 +1814,18 @@ hr {
     font-weight: bold;
   }
 }
+
 .video {
   height: 295px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.959);
   position: relative;
 }
+
 .detailedcatalog {
   .imgs {
     display: block;
+
     img {
       width: 51px;
       height: 51px;
@@ -1579,6 +1838,7 @@ hr {
   .detailedprice {
     display: flex;
     align-items: center;
+
     p {
       color: #07ad68;
       font-family: AvenirNext;
@@ -1588,6 +1848,7 @@ hr {
       font-weight: bold;
       margin-right: 25px;
     }
+
     button {
       font-family: AvenirNext;
       font-size: 16px;
@@ -1602,6 +1863,7 @@ hr {
     }
   }
 }
+
 .character {
   ul {
     padding: 0 !important;
@@ -1611,6 +1873,7 @@ hr {
     columns: 2;
     -webkit-columns: 2;
     -moz-columns: 2;
+
     li {
       span {
         float: right;
@@ -1627,6 +1890,7 @@ hr {
 
   color: #000000;
 }
+
 .detailimg {
   padding: 85px 45px;
   border: 1px solid #d1d1d1;
@@ -1636,6 +1900,7 @@ hr {
     width: 100%;
   }
 }
+
 .heading {
   font-family: AvenirNext;
   font-size: 18px;
@@ -1644,10 +1909,12 @@ hr {
   color: #000000;
   font-weight: bold;
 }
+
 .sameorders {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
+
   .order {
     padding: 18px 21px;
     border: 1px solid #d8d8d8;
@@ -1655,11 +1922,13 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: space-betweencatalogmain;
+
     h4 {
       font-size: 14px;
       line-height: 16px;
       letter-spacing: -0.393921px;
     }
+
     p {
       font-family: AvenirNext;
       font-size: 20px;
@@ -1669,6 +1938,7 @@ hr {
       color: #07ad70;
       font-weight: bold;
     }
+
     a {
       color: rgb(0, 0, 0) !important;
       border: 1px solid #07ad70;
