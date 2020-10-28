@@ -6,40 +6,40 @@
   padding-right: 0 !important;
 }
 
-.sliderbar {
-  .textbar {
-    height: 45vh;
-    background: linear-gradient(203.4deg, #2b3679 -46.75%, #131944 79.39%);
-    position: relative;
-    z-index: -1;
+// .sliderbar {
+//   .textbar {
+//     height: 45vh;
+//     background: linear-gradient(203.4deg, #2b3679 -46.75%, #131944 79.39%);
+//     position: relative;
+//     z-index: -1;
 
-    &--block {
-      img {
-        height: 100%;
-        margin-right: 25px;
-      }
+//     &--block {
+//       img {
+//         height: 100%;
+//         margin-right: 25px;
+//       }
 
-      float: right;
-      left: 40%;
-      display: flex;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-    }
+//       float: right;
+//       left: 40%;
+//       display: flex;
+//       position: absolute;
+//       top: 50%;
+//       transform: translateY(-50%);
+//     }
 
-    h2 {
-      font-size: 55px;
-      color: white;
-      line-height: 57px;
-    }
+//     h2 {
+//       font-size: 55px;
+//       color: white;
+//       line-height: 57px;
+//     }
 
-    a {
-      color: #4dbb91 !important;
-      font-size: 18px;
-      line-height: 21px;
-    }
-  }
-}
+//     a {
+//       color: #4dbb91 !important;
+//       font-size: 18px;
+//       line-height: 21px;
+//     }
+//   }
+// }
 
 // .slide-contenedor {
 //   max-width: 100%;
@@ -274,8 +274,13 @@
   margin-top: 0 !important;
   padding-right: 0 !important;
 
+
+  .carousel-inner {
+    z-index: 10;
+  }
+
   .textbar {
-    height: 60vh;
+    height: 50vh;
     background: linear-gradient(203.4deg, #2b3679 -46.75%, #131944 79.39%);
     position: relative;
     z-index: -1;
@@ -308,25 +313,25 @@
   }
 
   .imagebar {
-    position: absolute;
-    top: -5%;
     z-index: 1;
-    transform: translateY(-20%) !important;
 
     img {
-      position: absolute;
+
+      transform: translateY(-15%);
       bottom: 0%;
+      position: relative;
 
       &:first-child {
+        position: absolute;
         top: 0%;
-        transform: translateY(-5%);
+        transform: translateY(-25%);
       }
 
       &:last-child {
-        top: 50%;
-        left: 25%;
-        transform: translateY(60%);
-        transform: translateX(150%);
+        position: absolute;
+        top: -5%;
+        // transform: translate(-80%);
+        left: 30%
       }
     }
   }
